@@ -1,12 +1,10 @@
-//NAME:- NILESH PANCHOTIYA
-//GAME:- NUMBER SHIFTING GAME
-
+// NAME:- NILESH PANCHOTIYA
+// GAME:- NUMBER SHIFTING GAME
 
 #include <stdio.h>
 #include <conio.h>
 #include <stdlib.h>
 #include <time.h>
-
 
 #define WHITE "\e[0;97m"
 #define BOLD "\e[1;91m"
@@ -19,7 +17,6 @@
 #define UCYAN "\e[4;36m"
 #define WING "\e[1;92m"
 
-
 void downarrow(int a[][4], int *);
 void uparrow(int a[][4], int *);
 void rightarrow(int a[][4], int *);
@@ -31,10 +28,9 @@ void winning();
 void rules();
 int findkey();
 
-
 int win(int a[][4])
 {
-    int i, n = 1;
+    int i = 0, n = 1;
     int mat[4][4];
     for (i = 0; i < 4; i++)
     {
@@ -132,7 +128,7 @@ void uparrow(int a[][4], int *step)
 }
 int findkey()
 {
-    int t;
+    int t = 0;
     t = _getch();
     if (t == 32)
         t = _getch();
@@ -140,7 +136,7 @@ int findkey()
 }
 void winning()
 {
-    int i, n = 1;
+    int i = 0, n = 1;
     int mat[4][4];
     for (i = 0; i < 4; i++)
     {
@@ -206,7 +202,7 @@ void display(int arr[][4], int step)
 void createMatrix(int arr[][4])
 {
     int n = 15;
-    int num[n], i, j;
+    int num[n], i = 0, j = 0;
     for (i = 0; i < 15; i++)
         num[i] = i + 1;
 
